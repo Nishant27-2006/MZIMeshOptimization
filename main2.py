@@ -1,3 +1,5 @@
+!pip install neuroptica 
+!pip install deap
 import neuroptica as neu
 import numpy as np
 import matplotlib.pyplot as plt
@@ -54,8 +56,8 @@ def calculate_rvd(ideal_matrix: np.ndarray, actual_matrix: np.ndarray) -> float:
     logger.debug(f"Calculated RVD: {rvd}")
     return rvd
 
-
-def de_optimize_mesh(mesh: OptimizedMZIMesh, target_matrix: np.ndarray, generations: int = 1000, population_size: int = 50, mutation: float = 0.8, recombination: float = 0.7) -> np.ndarray:
+#for ideal fidelity improvement we want num generations between 1000-3000
+def de_optimize_mesh(mesh: OptimizedMZIMesh, target_matrix: np.ndarray, generations: int = 1200, episodes: int = 3000, population_size: int = 150, mutation: float = 0.8, recombination: float = 0.7) -> np.ndarray:
     """
     Optimize the MZI mesh using Differential Evolution.
     """
