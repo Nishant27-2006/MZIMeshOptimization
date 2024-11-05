@@ -1,4 +1,5 @@
-Optimizing MZI Mesh Fidelity with Q-Learning, Genetic Algorithms, and Gradient Descent
+**Optimizing MZI Mesh Fidelity with Q-Learning, Genetic Algorithms, and Gradient Descent**
+
 This project implements and compares three optimization techniques—Q-Learning, Genetic Algorithms, and Gradient Descent—for tuning the phases of a Mach-Zehnder Interferometer (MZI) mesh. The goal is to maximize the fidelity between the transfer matrix of the MZI mesh and a randomly generated unitary target matrix.
 
 Features
